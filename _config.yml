@@ -23,7 +23,7 @@ email: rise0312@naver.com
 description: >- # this means to ignore newlines until "baseurl:"
 #  PB4 SM HISTORY
 
-url: "https://andurogit.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://andurogit.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #imgrepo: "http://localhost:4000/static/img"
 #twitter_username: jekyllrb
 #github_username:  jekyll
