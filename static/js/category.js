@@ -3,9 +3,6 @@ $(document).ready(function() {
 });
 
 /**
- * 分类展示
- * 点击右侧的分类展示时
- * 左侧的相关裂变展开或者收起
  * @return {[type]} [description]
  */
 function categoryDisplay() {
