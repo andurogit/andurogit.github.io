@@ -1,23 +1,30 @@
 ---
 layout: post
-title:  "Blog 시작"
+title:  "Blog 시작..."
 date:   2020-01-09 11:00:00 +0900
-categories: Diary
+categories: [Diary, cate2, cate3]
 tag: [TAGS]
 ---
 
 * TOC
 {:toc}
 
-# title1
+# 시작 계기
 
-* article
+IT 관련 일을 시작 한지 6년 차가 된 지금 <br/>
+짧지 않은 시간동안 무얼 해왔는지도 모르겠고... <br/>
+메모하는 버릇은 있어서 메모를 바탕으로 하나 씩 천천히 <br/>
+정리를 해보고자 합니다
 
-# title2
+# 블로그 선정기준
 
-* article
+* 무겁지 않고 가벼워야 함 
+* 유지보수가 쉬웠으면 함
+* NAVER BLOG, TISTORY, WORDPRESS 등이 있었지만
+* 데이터 백업이 편하고 호스팅비용이 들지 않으며 데이터베이스를 사용하지 않는 *`github io WITH jekyll`* 로 선택
 
-# title3
+# 이 블로그는
 
-* article
-
+이 블로그는 저의 기억 저장소이며 <br/>
+잘못된 정보가 있을 수도 있습니다. <br/>
+점점 진화하는 블로그가 되었으면 합니다. 

@@ -6,6 +6,7 @@ icon: octicon-list-unordered
 isNavItem: true
 styles : [article-list.css,category.css]
 scripts: [category.js]
+debugger : true
 ---
 
 <div class="row index">
@@ -28,13 +29,13 @@ scripts: [category.js]
                 <li>
                     <a href="javascript:void(0);" class="categories-item" cate="{{ category | first }}">
                         {{ category | first }}&nbsp;<span class="categories-badge">{{ category | last | size }}</span>
+                        {{forloop.rindex}}
                     </a>
                 </li>
 
                 {% endfor %}
             </ul>
         </div>
-
 
         <div>
             <section class="category-slice" post-cate="All">
