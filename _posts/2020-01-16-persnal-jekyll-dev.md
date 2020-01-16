@@ -94,6 +94,7 @@ tag: [search, dev]
 ## search.html 작성
 
 * lunr.min 만 동작 함
+* `\` 제거하고 적용 code 로 인식되서 넣음
 
 ```html
 
@@ -105,7 +106,7 @@ layout: default
 
 <script>
   window.store = {
-    {% for post in site.posts %}
+    {\% for post in site.posts \%}
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
@@ -113,8 +114,8 @@ layout: default
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}"
       }
-      {% unless forloop.last %},{% endunless %}
-    {% endfor %}
+      {\% unless forloop.last \%},{\% endunless \%}
+    {\% endfor \%}
   };
 </script>
 <script src="/static/js/lunr.min.js"></script>
