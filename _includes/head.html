@@ -16,4 +16,14 @@
     <link rel="stylesheet" type="text/css" href="{{ '/static/css/style.css' | prepend: site.baseurl | prepend: site.url}}" />
     {% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ '/static/css/' | append: style | prepend: site.baseurl | prepend: site.url}}" />
     {%endfor%}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157168496-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-157168496-1');
+    </script>
+
 </head>

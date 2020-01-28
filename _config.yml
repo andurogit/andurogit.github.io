@@ -58,7 +58,7 @@ defaults:
       styles: [highlight.css,post.css]
       scripts: [post.js]
 
-#livereload: true
+livereload: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

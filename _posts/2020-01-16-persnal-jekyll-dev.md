@@ -6,6 +6,9 @@ categories: jekyll
 tag: [search, dev]
 ---
 
+* TOC
+{:toc}
+
 # Lunr.js
 
 * 클라언트 쪽에서 모든 문자를 검색할 수 있는 엔진
@@ -24,7 +27,7 @@ tag: [search, dev]
 
 ## 입력 폼 생성
 
-```html
+```html class:"lineno"
 <li class="search-box">
     <input type="text" class="search-txt" id="search-box" name="query" placeholder="Type to search">
     <a class="search-btn" href="#" onclick="fn_search_txt()">
