@@ -47,7 +47,7 @@ var fn_addPerson = function(param) {
     var tdtag2 = document.createElement("td");
     var delbtn = document.createElement("button");
     delbtn.innerText = "삭제";
-    delbtn.addEventListener('click',function(){fn_delrow("trid" + tdidx);});
+    delbtn.addEventListener('click',function(){fn_delrow("person", this);});
     tdtag2.appendChild(delbtn);
 
 
@@ -60,9 +60,9 @@ var fn_addPerson = function(param) {
     trbody.appendChild(tdtag2);
 }   
 
-var fn_delrow = function(param) {
-    console.log(param);
-    document.querySelector('#' + param).remove();
+var fn_delrow = function(tableId, param) {
+    document.querySelector('.'+tableId).deleteRow(param.parentNode.parentNode.rowIndex);
+    //document.querySelector('#' + param).remove();
 }
 
 // 장소 추가 함수
@@ -105,10 +105,11 @@ var fn_addPlace = function() {
 
       // delete button create
       var tdtag2 = document.createElement("td");
-      var delbtn = document.createElement("button");
-      delbtn.innerText = "삭제";
-      delbtn.addEventListener('click',function(){fn_delrow("trPid" + tdidx);});
-      tdtag2.appendChild(delbtn);
+      var delbtn2 = document.createElement("button");
+      delbtn2.innerText = "삭제";
+      //"trPid" + tdidx
+      delbtn2.addEventListener('click',function(){fn_delrow("place", this);});
+      tdtag2.appendChild(delbtn2);
       tdtag2.setAttribute("id", "placeDel" + tdidx);
       
       mbody.appendChild(trtag);
@@ -119,11 +120,18 @@ var fn_addPlace = function() {
       trbody.appendChild(tdtag);
       trbody.appendChild(tdperson);
       trbody.appendChild(tdprice);
-      
+      console.log(tdtag2);
       trbody.appendChild(tdtag2);
     } // END LOOP
 
 }   
+
+// 합산 처리
+var fn_calc_amt = function() {
+  // person 에 등록 된 사람 을 배열에 넣어 놓고 사람 : 금액 정보니 맵이 더 좋을 듯 함
+  // 루핑 돌면서 합산 처리 필요.  
+}
+
 
 </script>
 
