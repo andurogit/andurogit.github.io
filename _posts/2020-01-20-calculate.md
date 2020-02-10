@@ -124,6 +124,45 @@ var fn_addPlace = function() {
       trbody.appendChild(tdtag2);
     } // END LOOP
 
+// 미사용
+function AddTotalRow() {
+    var table = document.getElementById('tblReport');
+    // tr 갯수 카운팅 
+    var trCount = table.rows.length;
+    // td 갯수 카운팅
+    var tdCount = table.rows[0].cells.length;
+ 
+    // 배열로 DataSet 구성 td 갯수 만큼 생성
+    var arrTotal = new Array(tdCount);
+    // 맨 앞열 Total 로 명칭 부여 
+    arrTotal[0] = "Total";
+
+    // 기본값 부여 
+    for (i = 1; i &amp;lt; tdCount; i++) arrTotal[i] = 0;
+ 
+    // 이중 포문 
+    for (i = 1; i &amp;lt; trCount; i++) {     // 첫번째 Row는 Header
+        for (j = 1; j &amp;lt; tdCount; j++) { // 첫번째 Cell도 Header
+            var anchor = table.rows[i].cells[j].innerHTML.substring(1);
+            var endIndex = anchor.indexOf('&amp;gt;');
+            var restartIndex = anchor.indexOf('&amp;lt;');
+            var value = anchor.substring(endIndex+1, restartIndex);
+ 
+            arrTotal[j] += parseInt(value);
+        }
+    }
+ 
+    // table에 row 추가
+    var newRow = table.insertRow();
+    for (i = 0; i &amp;lt; arrTotal.length; i++) {
+        var newCell = newRow.insertCell();
+        newCell.innerHTML = arrTotal[i];
+        newCell.style.textAlign='center';
+    }
+}
+
+
+
 }   
 
 // 합산 처리
