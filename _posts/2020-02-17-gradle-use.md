@@ -65,7 +65,7 @@ apply from: 'other.gradle'
 
 이전 포스팅에서 gradle 파일 생성에 대해 시도해 보았고
 
-`Link` [Gradle File 생성]]({%post_url 2020-02-13-java-eclipse-gradle%}){:target="_blank"}
+`Link` [Gradle File 생성]({%post_url 2020-02-13-java-eclipse-gradle%}){:target="_blank"}
 
 실제로 library 를 가져와 보는 걸 해보려 합니다.
 
@@ -91,9 +91,7 @@ repositories {} 안에 mavenCentral() 과 같이 함수형태로 선언해 주�
 
 실제로 Central 이라는 곳에 library 를 가져 오는 듯 합니다.
 
-dependencies {} 안에 제가 사용해야 할 javax 그룹에 mail library 를 가져 옵니다.
-
-dependencies 
+dependencies {} 안에 제가 사용해야 할 javax 그룹에 mail library 를 가져 옵니다. 
 
 ```groovy
 
@@ -120,3 +118,14 @@ dependencies {
 }
 
 ```
+
+이렇게 build.gradle 파일에 스크립트를 작성하고 gradle을 refresh 하면
+
+![](/static/img/2020-02-18-13-37-07.png)
+
+
+Project and External Dependencies 에 프로젝트 라이브러리에 등록 됩니다.
+
+![](/static/img/2020-02-18-13-38-14.png)
+
+여기 까지 제가 의도한 대로 gradle을 이용하여 라이브러리를 가져 왔습니다.
