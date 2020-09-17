@@ -59,4 +59,4 @@ derby를 위한 툴도 찾아보니 있었습니다.
 
 razorsql 이라는 툴인데 하단에 링크 달아 놓겠습니다.
 
-`Link` [derbyDownload](https://razorsql.com/download_win.html){:target="_blank"}
+`Link` [derbyViewDownload](https://razorsql.com/download_win.html){:target="_blank"}
