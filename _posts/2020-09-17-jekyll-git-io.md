@@ -2,8 +2,8 @@
 layout: post
 title:  "3. jekyll github io 사용"
 date:   2020-09-17 14:00:00 +0900
-categories: ruby    
-tag: [jeykll, git.io.start]
+categories: [jekyll]    
+tag: [git.io.start]
 ---
 
 * TOC

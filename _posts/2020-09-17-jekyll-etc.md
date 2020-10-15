@@ -2,8 +2,8 @@
 layout: post
 title:  "4. jekyll 테마구동 오류체크"
 date:   2020-09-17 15:00:00 +0900
-categories: ruby    
-tag: [jeykll, git.io.start]
+categories: [jekyll]    
+tag: [git.io.start]
 ---
 
 * TOC

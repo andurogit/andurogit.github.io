@@ -2,8 +2,8 @@
 layout: post
 title:  "5. jekyll custom"
 date:   2020-09-18 09:00:00 +0900
-categories: ruby    
-tag: [jeykll, jekyll.detail]
+categories: [jekyll]    
+tag: [jekyll.detail]
 ---
 
 * TOC

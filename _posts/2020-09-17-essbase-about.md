@@ -2,7 +2,7 @@
 layout: post
 title:  "Essbase에 대하여"
 date:   2020-09-17 16:00:00 +0900
-categories: oracle    
+categories: essbase    
 tag: [essbase]
 ---
 

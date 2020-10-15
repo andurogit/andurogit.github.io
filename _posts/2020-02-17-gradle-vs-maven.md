@@ -2,7 +2,7 @@
 layout: post
 title:  "Maven vs Gradle"
 date:   2020-02-17 09:00:00 +0900
-categories: java    
+categories: dev-tools    
 tag: [gradle, maven]
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title:  "1. jekyll install"
 date:   2020-09-17 10:00:00 +0900
-categories: ruby    
-tag: [jeykll, git.io.start]
+categories: [jekyll]    
+tag: [git.io.start]
 ---
 
 * TOC

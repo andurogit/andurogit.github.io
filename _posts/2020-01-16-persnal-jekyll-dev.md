@@ -2,7 +2,7 @@
 layout: post
 title:  "jekyll Search with Lunr.js"
 date:   2020-01-16 13:00:00 +0900
-categories: jekyll    
+categories: [jekyll]    
 tag: [search, dev]
 ---
 

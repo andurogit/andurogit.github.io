@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll TOC"
 date:   2020-01-09 11:00:00 +0900
-categories: [Jekyll]
+categories: [jekyll]
 tag: [TOC]
 ---
 
