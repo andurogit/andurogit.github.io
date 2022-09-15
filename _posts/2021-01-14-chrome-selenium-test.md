@@ -2,8 +2,8 @@
 layout: post
 title:  "Chrome devTools 에서 xpath 테스트"
 date:   2020-11-27 17:00:00 +0900
-categories: MYSQL
-tag: [chrome, selenium, debug]
+categories: python
+tag: [chrome, selenium, debug, python]
 ---
 
 * TOC
@@ -11,7 +11,7 @@ tag: [chrome, selenium, debug]
 
 # 들어가며
 
-크롤링 라이브러리인 selenium 을 사용하다보면
+크롤링 라이브러리인 selenium 을 사용하다보면\
 
 selector 를 xpath 기준으로 가져와야 할 경우가 있습니다.
 
