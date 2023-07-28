@@ -11,7 +11,7 @@ tag: [chrome, selenium, debug, python]
 
 # 들어가며
 
-크롤링 라이브러리인 selenium 을 사용하다보면\
+크롤링 라이브러리인 selenium 을 사용하다보면
 
 selector 를 xpath 기준으로 가져와야 할 경우가 있습니다.
 
